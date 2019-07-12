@@ -29,7 +29,7 @@ RUN set -ex; \
     \
     apt-get purge -y --auto-remove wget
 
-EXPOSE 8080
+EXPOSE 8090
 
 USER mailroom
 
