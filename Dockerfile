@@ -24,7 +24,8 @@ RUN set -ex; \
     tar -xzC /usr/local/src/mailroom -f mailroom.tar.gz; \
     \
     # move all packaged files. need static files for documentation.
-    mv /usr/local/src/mailroom/* /usr/local/bin/; \
+    mv /usr/local/src/mailroom/mailroom /usr/local/bin/; \
+    mv /usr/local/src/mailroom/docs /; \ 
     rm -rf /usr/local/src/mailroom mailroom.tar.gz; \
     \
     apt-get purge -y --auto-remove wget
